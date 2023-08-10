@@ -1,0 +1,25 @@
+{
+  "name": "openaiapinodetemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AustinPoulson/Open-AI-API-Node-Template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AustinPoulson/Open-AI-API-Node-Template/issues"
+  },
+  "homepage": "https://github.com/AustinPoulson/Open-AI-API-Node-Template#readme",
+  "dependencies": {
+    "openai": "^3.3.0",
+    "yarn": "^1.22.19"
+  }
+}
