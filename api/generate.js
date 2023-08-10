@@ -19,19 +19,16 @@ export default async function generate({prompt = '', temperature = 0.6, model = 
   }
 
   try {
-    const completion = await openai.createCompletion({
+    return await openai.createCompletion({
       model: model,
       prompt: prompt,
       temperature: temperature,
-    });
-    return completion.data.choices[0].text;
+    })
   } catch(error) {
     // Consider adjusting the error handling logic for your use case
     if (error.response) {
-      console.error(error.response.status, error.response.data);
       throw error.response;
     } else {
-      console.error(`Error with OpenAI API request: ${error.message}`);
       throw error.message;
     }
   }
